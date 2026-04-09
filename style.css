@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(68, 67, 67);
+    font-weight: 600;
+    overflow-x: hidden;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    background-color: white;
+    height: 68px;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+.navlogo{
+    display: flex;
+    align-items: center;
+}
+.navlogo img{
+    margin-left: 20px;
+    height: 20px;
+
+}
+.navitems{
+    display: flex;
+    font-weight: lighter;
+    gap: 35px;
+    align-items: center;
+    font-size: large;
+}
+.graphimg{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.graphimg img{
+    scale: 0.80;
+}
+.sitedetail{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.sitedetail p{
+    font-size: x-large;
+}
+.signupbutton{
+    display: flex;
+    justify-self: center;
+    margin-top: 50px;
+}
+.signupbutton button{
+    background-color: rgba(62, 103, 215, 0.887);
+    height: 50px;
+    width: 230px;
+    border-radius: 5px;
+    font-size: x-large;
+    color: white;
+    border: none;
+}
+.reviews{
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+}
+.leftbox{
+    margin-right: 120px;
+    width: 400px;
+}
+.leftbox h1{
+    text-align: start;
+}
+.leftbox p{
+    font-size: large;
+    line-height: 1.8rem;
+}
+.rightbox img{
+    width: 700px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.menu h3{
+    margin-top: 50px;
+}
+.news{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+.pricing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
