@@ -3,14 +3,21 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(68, 67, 67);
-    font-weight: 600;
     overflow-x: hidden;
 }
 .container{
     height: 100vh;
     width: 100vw;
     background-color: white;
+}
+p,h1,h2,h3,h4{
+    color: rgb(68, 67, 67);
+    font-weight: 600;
+}
+a{
+    color: rgb(56, 126, 209);
+    text-decoration: none;
+    font-weight: 680;
 }
 .navbar{
     display: flex;
@@ -19,7 +26,8 @@
     background-color: white;
     height: 68px;
     width: 100%;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.059);
+    z-index: 100;
 }
 .navlogo{
     display: flex;
@@ -40,7 +48,7 @@
 .graphimg{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 .graphimg img{
     scale: 0.80;
@@ -60,16 +68,16 @@
     margin-top: 50px;
 }
 .signupbutton button{
-    background-color: rgba(62, 103, 215, 0.887);
+    background-color: rgb(56, 126, 209);
     height: 50px;
     width: 230px;
     border-radius: 5px;
     font-size: x-large;
     color: white;
     border: none;
+    margin-bottom: 180px;
 }
 .reviews{
-    margin-top: 180px;
     display: flex;
     justify-content: center;
 }
@@ -103,7 +111,74 @@
 }
 .pricing{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.leftbox2{
+    width: 500px;
+    margin-left: 170px;
+}
+.leftbox2 p{
+    font-size: large;
+    line-height: 1.8rem;
+}
+.rightbox2{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    margin-left: 20px;
+}
+.rightbox2 img{
+    height: 110px;
+}
+.rightbox2 p{
+    font-weight: lighter;
+    align-self: center;
+    font-size: x-small;
+    width: 110px;
+    margin-left: -25px;
+}
+#intra{
+    width: 70px;
+    padding-left: 20px;
+}
+.varsity{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+.rightbox3{
+    width: 600px;
+    line-height: 2rem;
+}
+.rightbox3 h1{
+    overflow: hidden;
+}
+.account{
+    display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 150px;
+    gap: 40px;
 }
+.footer{
+    padding-top: 50px;
+    background-color: #fbfbfb;
+    
+}
+.footerlinks{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+.box1{
+    line-height: 1.8rem;
+}
+.box1 img{
+    width: 180px;
+}
+.box2{
 
+}
