@@ -199,3 +199,28 @@ a{
 .box2{
 
 }
+.footerabout{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 1300px;
+    row-gap: 15px;
+}
+.footerabout p{
+    font-size: 0.75rem;
+    color: #9b9b9b;
+    line-height: 1.5rem;
+}
+.footerlast{
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.footerlast p{
+    color: #888787;
+    font-size: 0.85rem;
+    
+}
