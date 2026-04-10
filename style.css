@@ -175,9 +175,26 @@ a{
 }
 .box1{
     line-height: 1.8rem;
+    /* width: 180px; */
 }
-.box1 img{
+#footlogo{
     width: 180px;
+}
+#Socialmedia{
+    margin-top: 20px;
+}
+#WATGYT{
+    margin-top: 15px;
+}
+.stores{
+    margin-top: 20px;
+}
+.boxes{
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    line-height: 3rem;
+    padding-right: 100px;
 }
 .box2{
 
