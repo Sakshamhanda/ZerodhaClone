@@ -1,225 +1,303 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    overflow-x: hidden;
 }
-body{
-    height: 100vh;
-    width: 100vw;
+
+body {
+    font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+    color: #444;
 }
-.container{
-    background-color: white;
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
 }
-p,h1,h2,h3,h4{
-    color: rgb(68, 67, 67);
-    font-weight: 600;
-}
-a{
-    color: rgb(56, 126, 209);
-    text-decoration: none;
-    font-weight: 680;
-}
-.navbar{
-    display: flex;
-    justify-content: space-around;
-    position: fixed;
-    background-color: white;
-    height: 68px;
+
+img {
     width: 100%;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.059);
+    height: auto;
+}
+
+header {
     z-index: 100;
 }
-.navlogo{
-    display: flex;
-    align-items: center;
-}
-.navlogo img{
-    margin-left: 20px;
-    height: 20px;
 
-}
-.navitems{
+.navbar {
     display: flex;
-    font-weight: lighter;
-    gap: 35px;
+    justify-content: space-between;
     align-items: center;
-    font-size: large;
+    height: 70px;
 }
-.graphimg{
+
+.navitems {
     display: flex;
-    justify-content: center;
+    gap: 30px;
+    font-size: 15px;
+}
+
+.navlogo img{
+    height: 18px;
+    width: auto;
+    margin-left: 10px;
+}
+
+.graphimg {
     margin-top: 100px;
-}
-.graphimg img{
-    scale: 0.80;
-}
-.sitedetail{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
     text-align: center;
 }
-.sitedetail p{
-    font-size: x-large;
+
+.sitedetail {
+    text-align: center;
+    margin-top: 40px;
 }
-.signupbutton{
+
+.sitedetail h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.sitedetail p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.signupbutton {
     display: flex;
-    justify-self: center;
-    margin-top: 50px;
+    justify-content: center;
+    margin-top: 30px;
 }
-.signupbutton button{
-    background-color: rgb(56, 126, 209);
-    height: 50px;
-    width: 230px;
-    border-radius: 5px;
-    font-size: x-large;
+
+.signupbutton button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background: #387ed1;
     color: white;
     border: none;
-    margin-bottom: 180px;
+    border-radius: 4px;
 }
-.reviews{
+
+.reviews {
     display: flex;
-    justify-content: center;
+    gap: 60px;
+    margin-top: 100px;
 }
-.leftbox{
-    margin-right: 120px;
-    width: 400px;
+
+.leftbox, .rightbox {
+    flex: 1;
 }
-.leftbox h1{
-    text-align: start;
+
+.leftbox p {
+    margin-top: 10px;
+    line-height: 1.7;
 }
-.leftbox p{
-    font-size: large;
-    line-height: 1.8rem;
-}
-.rightbox img{
-    width: 700px;
-}
-.menu{
+
+.menu {
     display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-.menu h3{
-    margin-top: 50px;
-}
-.news{
-    display: flex;
-    justify-content: center;
-    margin-top: 70px;
-    margin-bottom: 100px;
-}
-.pricing{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.leftbox2{
-    width: 500px;
-    margin-left: 170px;
-}
-.leftbox2 p{
-    font-size: large;
-    line-height: 1.8rem;
-}
-.rightbox2{
-    margin-top: 40px;
-    display: flex;
-    flex-direction: row;
-    width: 900px;
-    margin-left: 20px;
-}
-.rightbox2 img{
-    height: 110px;
-}
-.rightbox2 p{
-    font-weight: lighter;
-    align-self: center;
-    font-size: x-small;
-    width: 110px;
-    margin-left: -25px;
-}
-#intra{
-    width: 70px;
-    padding-left: 20px;
-}
-.varsity{
-    margin-top: 150px;
-    display: flex;
-    justify-content: center;
-    gap: 200px;
-}
-.rightbox3{
-    width: 600px;
-    line-height: 2rem;
-}
-.rightbox3 h1{
-    overflow: hidden;
-}
-.account{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 150px;
-    gap: 40px;
-}
-.footer{
-    padding-top: 50px;
-    background-color: #fbfbfb;
-    
-}
-.footerlinks{
-    display: flex;
-    justify-content: center;
-    gap: 150px;
-}
-.box1{
-    line-height: 1.8rem;
-    /* width: 180px; */
-}
-#footlogo{
-    width: 180px;
-}
-#Socialmedia{
+    gap: 30px;
     margin-top: 20px;
 }
-#WATGYT{
+
+.news {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.pricing {
+    display: flex;
+    gap: 60px;
+    margin-top: 100px;
+}
+
+.leftbox2, .rightbox2 {
+    flex: 1;
+}
+
+.rightbox2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+}
+
+.stores{
+    display: flex;
+    gap: 15px;
     margin-top: 15px;
 }
-.stores{
-    margin-top: 20px;
+
+.stores img{
+    height: 30px;
+    width: auto;
+    cursor: pointer;
 }
+
+.rightbox2 img{
+    height: 60px;
+    width: auto;
+}
+
+.rightbox2 p{
+    font-size: 13px;
+    width: 120px;
+    margin-left: 0;
+    text-align: center;
+    color: #666;
+}
+
+.varsity {
+    display: flex;
+    gap: 80px;
+    margin-top: 120px;
+}
+
+.rightbox3 {
+    flex: 1;
+}
+
+.account {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.footer{
+    background-color: #fafafa;
+    padding: 50px 0;
+}
+
+.footerlinks{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.box1{
+    max-width: 220px;
+}
+
+#footlogo{
+    width: 140px;
+    margin-bottom: 15px;
+}
+
+.box1 p{
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+}
+
 .boxes{
+    display: flex;
     gap: 50px;
-    display: flex;
-    justify-content: center;
-    line-height: 3rem;
-    padding-right: 100px;
+    flex-wrap: wrap;
 }
+
+#WATGYT{
+    width: 100px;
+    margin-top: 10px;
+}
+
+#Socialmedia{
+    width: 120px;
+    margin-top: 15px;
+}
+
+.boxes div h2{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.boxes div p{
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
 .footerabout{
-    margin-top: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    width: 1300px;
-    row-gap: 15px;
+    margin-top: 40px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .footerabout p{
-    font-size: 0.75rem;
-    color: #9b9b9b;
-    line-height: 1.5rem;
+    font-size: 12px;
+    color: #888;
+    line-height: 1.6;
 }
+
 .footerlast{
+    margin-top: 30px;
     display: flex;
     justify-content: center;
-    margin-top: 18px;
-    gap: 30px;
-    margin-bottom: 50px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
+
 .footerlast p{
-    color: #888787;
-    font-size: 0.85rem;
-    
+    font-size: 13px;
+    color: #777;
+}
+
+@media (max-width: 680px) {
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .navlogo img{
+        height: 16px;
+    }
+
+    .navitems {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .sitedetail h1 {
+        font-size: 26px;
+    }
+
+    .sitedetail p {
+        font-size: 15px;
+    }
+
+    .rightbox2{
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .stores{
+        justify-content: center;
+    }
+
+    .stores img{
+        height: 35px;
+    }
+
+    .reviews,
+    .pricing,
+    .varsity {
+        flex-direction: column;
+    }
+
+    .footerlinks{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .boxes{
+        justify-content: center;
+    }
+
+    .box1{
+        align-items: center;
+    }
 }
